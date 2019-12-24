@@ -45,5 +45,10 @@ public class TestResource {
 		Student st = studentService.findStudentObject(id, name);
 		return new ResponseEntity<Student>(st, HttpStatus.OK);
 	}
+	
+	@GetMapping("/sayHello")
+	ResponseEntity<String> sayHi() {
+		return new ResponseEntity<String>("Hello Praveen", HttpStatus.OK);
+	}
 
 }
