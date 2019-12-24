@@ -45,7 +45,8 @@ public class TestResource {
 	
 	@GetMapping("/sayHi")
 	ResponseEntity<String> sayHi() {
-		return new ResponseEntity<String>("Hi Praveen Maurya", HttpStatus.OK);
+		String message = "Hi Praveen Maurya";
+		return new ResponseEntity<String>(message, HttpStatus.OK);
 	}
 
 }
