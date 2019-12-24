@@ -17,9 +17,6 @@ import com.example.demo.service.TestService;;
 @RequestMapping("/api")
 public class TestResource {
 	
-//	@Autowired
-//	private TestService testService;
-//	
 	@Autowired
 	private StudentService studentService;
 	
