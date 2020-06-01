@@ -77,6 +77,8 @@ public class StudentDTO implements Serializable {
 	public void setFee(Integer fee) {
 		this.fee = fee;
 	}
+	public StudentDTO() {
+	}
 
 	public StudentDTO(Long id, Integer version, String name, Integer age, LocalDate dob, Integer passoutYear,
 			Integer fee) {
