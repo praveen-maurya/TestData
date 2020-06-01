@@ -99,6 +99,18 @@ public class Student implements Serializable {
 		this.fee = fee;
 	}
 
+	public Student(Long id, Integer version, String name, Integer age, LocalDate dob, Integer passoutYear,
+			Integer fee) {
+		super();
+		this.id = id;
+		this.version = version;
+		this.name = name;
+		this.age = age;
+		this.dob = dob;
+		this.passoutYear = passoutYear;
+		this.fee = fee;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
